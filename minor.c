@@ -57,6 +57,79 @@ void getNames()     //gets the name of new folder that will be created
                continue;
             }
             chdir(filepath);
+        if(!dx)
+            {
+                if(strcmpi(ext,"ipynb")==0)
+                {
+                    strcpy(final_cmd," ");
+                    char *temp=getCmd(filename,ext,final_cmd);
+                    system(temp);
+                }
+                //Audio file formats extensions
+                if(strcmpi(ext,"aif")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"cda")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"mid") || strcmpi(ext,"midi")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"mp3")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }if(strcmpi(ext,"mpa")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"ogg")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"wav")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"wma")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                if(strcmpi(ext,"wpl")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                //Compressed file extensions
+                
         
         closedir(d);
     }
