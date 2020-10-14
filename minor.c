@@ -41,96 +41,96 @@ void getNames()     //gets the name of new folder that will be created
             char filename[size+10];
             char *ext;
             strcpy(filename,dir->d_name);
-          }
-         if(strcmpi(filename,".")==0||strcmpi(filename,"..")==0)continue;
+        }
+        if(strcmpi(filename,".")==0||strcmpi(filename,"..")==0)continue;
 
-            if (searchFordot(filename)==1)
-            {
-                ext=gettExtension(filename);
-                dx=directory_exist(filepath,ext);
-                printf("\n%d %s\n",dx,filename);
-            }
-            else
-            {
-               ext=NULL;
-               printf("\n%s\n",filename);
-               continue;
-            }
-            chdir(filepath);
+        if (searchFordot(filename)==1)
+        {
+            ext=gettExtension(filename);
+            dx=directory_exist(filepath,ext);
+            printf("\n%d %s\n",dx,filename);
+        }
+        else
+        {
+            ext=NULL;
+            printf("\n%s\n",filename);
+            continue;
+        }
+        chdir(filepath);
         if(!dx)
-            {
-                if(strcmpi(ext,"ipynb")==0)
+        {
+            if(strcmpi(ext,"ipynb")==0)
                 {
                     strcpy(final_cmd," ");
                     char *temp=getCmd(filename,ext,final_cmd);
                     system(temp);
                 }
-                //Audio file formats extensions
-                if(strcmpi(ext,"aif")==0)
+            //Audio file formats extensions
+            if(strcmpi(ext,"aif")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"cda")==0)
+            if(strcmpi(ext,"cda")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"mid") || strcmpi(ext,"midi")==0)
+            if(strcmpi(ext,"mid") || strcmpi(ext,"midi")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"mp3")==0)
-                {
-                   strcpy(final_cmd," ");
-                   char *temp=getCmd(filename,ext,final_cmd);
-
-                   system(temp);
-                }if(strcmpi(ext,"mpa")==0)
+            if(strcmpi(ext,"mp3")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"ogg")==0)
+            if(strcmpi(ext,"mpa")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"wav")==0)
+            if(strcmpi(ext,"ogg")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"wma")==0)
+            if(strcmpi(ext,"wav")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"wpl")==0)
+            if(strcmpi(ext,"wma")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                //Compressed file extensions
-                
-        
+            if(strcmpi(ext,"wpl")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            //Compressed file extensions
+        }
         closedir(d);
     }
 }
