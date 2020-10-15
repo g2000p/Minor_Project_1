@@ -137,318 +137,322 @@ void getNames()     //gets the name of new folder that will be created
 
                    system(temp);
                 }
-                if(strcmpi(ext,"arj")==0)
+            if(strcmpi(ext,"arj")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"deb")==0)
+             if(strcmpi(ext,"deb")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"pkg")==0)
+             if(strcmpi(ext,"pkg")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"rar")==0)
+             if(strcmpi(ext,"rar")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"rpm")==0)
+             if(strcmpi(ext,"rpm")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"tar.gz")==0)
+             if(strcmpi(ext,"tar.gz")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"z")==0)
+             if(strcmpi(ext,"z")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"zip")==0)
+             if(strcmpi(ext,"zip")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                //Disc and media file extensions
-                if(strcmpi(ext,"bin")==0)
+             //Disc and media file extensions
+             if(strcmpi(ext,"bin")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"dmg")==0)
+             if(strcmpi(ext,"dmg")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"iso")==0)
+             if(strcmpi(ext,"iso")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"toast")==0)
+             if(strcmpi(ext,"toast")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"vcd")==0)
+             if(strcmpi(ext,"vcd")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                //Data and database file extensions
-                if(strcmpi(ext,"csv")==0)
+                //Data and database file extensions               
+            if(strcmpi(ext,"csv")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"dat")==0)
+            if(strcmpi(ext,"dat")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"db") || (strcmpi(ext,"dbf")==0))
+            if(strcmpi(ext,"db") || (strcmpi(ext,"dbf")==0))
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"log")==0)
-                {
-                   strcpy(final_cmd," ");
-                   char *temp=getCmd(filename,ext,final_cmd);
-
-                   system(temp);
-                }if(strcmpi(ext,"mdb")==0)
+            if(strcmpi(ext,"log")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"sav")==0)
+            if(strcmpi(ext,"mdb")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"sql")==0)
+             
+            if(strcmpi(ext,"sav")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }    
+            if(strcmpi(ext,"sql")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"tar")==0)
+            if(strcmpi(ext,"tar")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"xml")==0)
+            if(strcmpi(ext,"xml")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                //E-mail file extensions
-                if(strcmpi(ext,"email")==0)
+            //E-mail file extensions
+            if(strcmpi(ext,"email")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"eml")==0)
+            if(strcmpi(ext,"eml")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"emlx")==0)
+            if(strcmpi(ext,"emlx")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"msg")==0)
+            if(strcmpi(ext,"msg")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"oft")==0)
+            if(strcmpi(ext,"oft")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }   
+            if(strcmpi(ext,"ost")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }    
+            if(strcmpi(ext,"pst")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"ost")==0)
+            if(strcmpi(ext,"vcf")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }    
+            //Executable file extensions    
+            if(strcmpi(ext,"apk")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"pst")==0)
+            if(strcmpi(ext,"bat")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"vcf")==0)
+            if(strcmpi(ext,"bin")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                //Executable file extensions
-                if(strcmpi(ext,"apk")==0)
+            if(strcmpi(ext,"cgi") || (strcmpi(ext,"pl")==0))
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"bat")==0)
+            if(strcmpi(ext,"com")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"bin")==0)
+            if(strcmpi(ext,"exe")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"cgi") || (strcmpi(ext,"pl")==0))
+            if(strcmpi(ext,"gadget")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"com")==0)
+            if(strcmpi(ext,"jar")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"exe")==0)
+            if(strcmpi(ext,"msi")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"gadget")==0)
+            if(strcmpi(ext,"wsf")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"jar")==0)
+            //Font file extensions
+            if(strcmpi(ext,"fnt")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"msi")==0)
+            if(strcmpi(ext,"fon")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"wsf")==0)
+            if(strcmpi(ext,"otf")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                //Font file extensions
-                if(strcmpi(ext,"fnt")==0)
+            if(strcmpi(ext,"ttf")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
 
                    system(temp);
                 }
-                if(strcmpi(ext,"fon")==0)
-                {
-                   strcpy(final_cmd," ");
-                   char *temp=getCmd(filename,ext,final_cmd);
-
-                   system(temp);
-                }
-                if(strcmpi(ext,"otf")==0)
-                {
-                   strcpy(final_cmd," ");
-                   char *temp=getCmd(filename,ext,final_cmd);
-
-                   system(temp);
-                }
-                if(strcmpi(ext,"ttf")==0)
-                {
-                   strcpy(final_cmd," ");
-                   char *temp=getCmd(filename,ext,final_cmd);
-
-                   system(temp);
-                }
+            //Image file formats by file extension
+            
         }
         closedir(d);
     }
