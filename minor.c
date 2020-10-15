@@ -7,7 +7,7 @@
 
 
 void getNames(char []);     //gets the name of new folder that will be created
-char * gettExtension(char *);       //separates extension from file name
+char * getExtension(char *);       //separates extension from file name
 
 filepath="";        //enter the file path
 
@@ -18,10 +18,10 @@ int main()
 
 }
 
-char * gettExtension(char *fullname)       //separates extension from file name
+char * getExtension(char *filename)       //separates extension from file name
 {
     char* ext1;
-    ext1 = strrchr(fullname,'.');
+    ext1 = strrchr(filename,'.');
     return ext1+1;
 }
 
@@ -46,7 +46,7 @@ void getNames()     //gets the name of new folder that will be created
 
         if (searchFordot(filename)==1)
         {
-            ext=gettExtension(filename);
+            ext=getExtension(filename);
             dx=directory_exist(filepath,ext);
             printf("\n%d %s\n",dx,filename);
         }
