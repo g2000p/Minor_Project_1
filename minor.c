@@ -130,7 +130,7 @@ void getNames()     //gets the name of new folder that will be created
                    system(temp);
                 }
             //Compressed file extensions
-        if(strcmpi(ext,"7z")==0)
+            if(strcmpi(ext,"7z")==0)
                 {
                    strcpy(final_cmd," ");
                    char *temp=getCmd(filename,ext,final_cmd);
