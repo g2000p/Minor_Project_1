@@ -5,17 +5,22 @@
 #include <stdio.h>
 #include <errno.h>
 
+#include "func.h"   //the new header file we have created
 
 void getNames(char []);     //gets the name of new folder that will be created
 char * getExtension(char *);       //separates extension from file name
+char * getCmd(char[],char[],char[]);    //generate a command that the O/S can understand
+int directory_exist(char[],char[]);     //checks weather a folder exist or not
+int searchFordot(char []);      //to find a dot in a file name
 
-filepath="";        //enter the file path
+char filepath[800];
 
-int main()
+int main(int argc, char* argv[])
 {
-    getNames();
-    return(0);
-
+   strcpy(filepath,intilizeitall(argc,argv));
+   printf("The path of file is:  %s",filepath);
+   getNames(filepath);
+   return(0);
 }
 
 char * getExtension(char *filename)       //separates extension from file name
@@ -23,6 +28,60 @@ char * getExtension(char *filename)       //separates extension from file name
     char* ext1;
     ext1 = strrchr(filename,'.');
     return ext1+1;
+}
+
+char *getCmd(char filename[],char ext[],char final_cmd[])
+{
+    strcat(final_cmd,"mkdir ");
+    strcat(final_cmd,ext);
+    char cmd2[400]=" && move ";
+    char finalfilename[500]="\"";
+
+    strcat(finalfilename,filename);
+    strcat(finalfilename,"\"");
+
+    strcat(cmd2,finalfilename);
+    strcat(cmd2," ");
+    strcat(cmd2,ext);
+    strcat(final_cmd,cmd2);
+    return final_cmd;
+
+}
+
+int searchFordot(char filename[])
+{
+    int i=0;
+    while(i<strlen(filename))
+    {
+        if(filename[i]=='.') return 1;
+        else i++;
+    }
+    return 0;
+}
+
+int directory_exist(char file[],char ext[])
+{
+    char temp[600];
+
+    strcpy(temp,file);
+    strcat(temp,"\\");
+    strcat(temp,ext);
+
+    DIR* dir = opendir(temp);
+
+    if (dir)
+    {
+        closedir(dir);
+        return 1;
+    }
+    else if (ENOENT == errno)
+    {
+        return 0;
+    }
+    else
+    {
+        return 2;
+    }
 }
 
 void getNames()     //gets the name of new folder that will be created
