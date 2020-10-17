@@ -511,6 +511,307 @@ void getNames()     //gets the name of new folder that will be created
                    system(temp);
                 }
             //Image file formats by file extension
+           if(strcmpi(ext,"ai")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"bmp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"gif")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"ico")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+
+            if(strcmpi(ext,"jpg")==0 || strcmpi(ext,"jpeg")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+
+            if(strcmpi(ext,"png")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"ps")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"psd")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"svg")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"tif") || strcmpi(ext,"tiff")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            //Internet related file extensions
+            if(strcmpi(ext,"asp") || (strcmpi(ext,"aspx")==0))
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cer")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cfm")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cgi") || (strcmpi(ext,"pl")==0))
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"css")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"html") || strcmpi(ext,"htm")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"js")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"jsp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"part")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"rss")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"xhtml")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            //Presentation file formats file extension
+            if(strcmpi(ext,"key")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"odp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"pps")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"ppt")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"pptx")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            //Programming files extensions
+            if(strcmpi(ext,"c")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cgi")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"class")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cpp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cs")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"h")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"java")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"php")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"py")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"sh")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"swift")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"vb")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            //Spreadsheet file formats file extension
+            if(strcmpi(ext,"ods")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"xls")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"xlsm")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"xlsx")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+                //System related file formats file extensions
             
         }
         closedir(d);
