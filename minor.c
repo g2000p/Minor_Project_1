@@ -288,7 +288,7 @@ void getNames()     //gets the name of new folder that will be created
 
                    system(temp);
                 }
-                //Data and database file extensions               
+            //Data and database file extensions               
             if(strcmpi(ext,"csv")==0)
                 {
                    strcpy(final_cmd," ");
@@ -510,7 +510,7 @@ void getNames()     //gets the name of new folder that will be created
 
                    system(temp);
                 }
-            //Image file formats by file extension
+           //Image file formats by file extension
            if(strcmpi(ext,"ai")==0)
                 {
                    strcpy(final_cmd," ");
@@ -811,7 +811,7 @@ void getNames()     //gets the name of new folder that will be created
 
                    system(temp);
                 }
-                //System related file formats file extensions
+           //System related file formats file extensions
             
         }
         closedir(d);
