@@ -1016,11 +1016,69 @@ void getNames()     //gets the name of new folder that will be created
 
                    system(temp);
                 }
-            //Word processor and text file formats file extension
-           
-           
-           
+           //Word processor and text file formats file extension
+           if(strcmpi(ext,"doc") || (strcmpi(ext,"docx")==0))
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"odt")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"pdf")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"rtf")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"tex")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"txt")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"wpd")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
         }
-        closedir(d);
+        else
+        {
+           char cmd[60]="move ";
+           char finalfilename[50]="\"";
+           strcat(finalfilename,filename);
+           strcat(finalfilename,"\"");
+           strcat(cmd,finalfilename);
+           strcat(cmd," ");
+           strcat(cmd,ext);
+           system(cmd);
+        }
     }
+   closedir(d);
+}
 }
