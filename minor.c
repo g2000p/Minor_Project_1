@@ -812,7 +812,214 @@ void getNames()     //gets the name of new folder that will be created
                    system(temp);
                 }
            //System related file formats file extensions
-            
+           if(strcmpi(ext,"bak")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cab")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cfb")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cpl")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"cur")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"dll")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"dmp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"drv")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"icns")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"ico")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"ini")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"lnk")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"msi")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"sys")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"tmp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+           //Video file formats file extension
+           if(strcmpi(ext,"3g2")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"3gp")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"avi")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"flv")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"h264")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"m4v")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"mkv")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"mov")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"mp4")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"mpg") || (strcmpi(ext,"mpeg")==0))
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"rm")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"swf")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"vob")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            if(strcmpi(ext,"wmv")==0)
+                {
+                   strcpy(final_cmd," ");
+                   char *temp=getCmd(filename,ext,final_cmd);
+
+                   system(temp);
+                }
+            //Word processor and text file formats file extension
+           
+           
+           
         }
         closedir(d);
     }
