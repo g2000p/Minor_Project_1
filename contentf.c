@@ -1,3 +1,5 @@
+//using basic file handling concepts read a txt file and categorizing it in different folder
+
 #include <stdio.h>
 #include<string.h>
 #define MAXCHAR 1000
