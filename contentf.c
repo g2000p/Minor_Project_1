@@ -2,6 +2,7 @@
 #include<string.h>
 #define MAXCHAR 1000
 
+//this is the function to count the keyword
 int count_of_keyword(char *x[]){
 
 int i=1,count=0;
@@ -25,12 +26,13 @@ int content_based_categorization(char filename[]){
     char read[100];
     int countkeyJava=0,countkeyC=0;
     int totalword=1;
-
+    
+    //all the keyword of JAVA
     char *JAVA[]={"abstract","assert","boolean","break","byte","case","catch","char","class","continue","default"
     ,"do","double","else","enum","extends","extends","final","finally","float","for","if","implements","import",
     "instance","of","int","interface","long","native","new","nullpackage","java.util.Scanner","reader.nextInt();","java.util.Scanner;","e1"};
 
-
+    //all the keyword of C
     char *C[]={"auto","break","case","char","const","continue","default","do","double","else","enum"
     ,"extern","float","for","goto","if","int","long","register","return","short","signed","sizeof","static",
     "struct","switch","typedef","union","unsigned","void","volatile","while","#include","<stdio.h>","main()","e1"};
@@ -78,7 +80,6 @@ int content_based_categorization(char filename[]){
 0=other
 1=c
 2=java
-3=python
 */
 if(ratioc<5.0 && ratiojava<5.0 ){
     printf("other");
@@ -98,7 +99,6 @@ else{
 }
 
 
-//printf("ratio of java:%f \n ratio of c:%f ",ratiojava,ratioc);
 
 }
 
