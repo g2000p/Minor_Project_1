@@ -1,4 +1,4 @@
-//using basic file handling concepts read a txt file and categorizing it in different folder
+//using basic file handling concepts read a txt file and categorizing it in different folder as per content
 
 #include <stdio.h>
 #include<string.h>
@@ -37,7 +37,7 @@ int content_based_categorization(char filename[])
 {
         FILE *fp;
         char read[100];
-        int countkeyJava=0,countkeyC=0;
+        int countkeyJava=0,countkeyC=0,countkeyhtml=0;
         int totalword=1;
     
         //all the keyword of JAVA
@@ -55,7 +55,7 @@ int content_based_categorization(char filename[])
         "</head>","</title>","<body>","</body>","<h1 ","</h1>","<style>","</style>","<p>",
         "e1"};
 
-        int countjava=0,countC=0;
+        int countjava=0,countC=0,counthtml;
 
         fp = fopen(filename, "r");
         if (fp == NULL)
@@ -65,7 +65,7 @@ int content_based_categorization(char filename[])
 
         countkeyJava=count_of_keyword(JAVA);
         countkeyC=count_of_keyword(C);
-
+	countkeyhtml=count_of_keyword(HTML);
         while (!feof(fp)) 
         {
 
@@ -98,16 +98,18 @@ int content_based_categorization(char filename[])
         float ratiohtml=(counthtml*100)/totalword;
 /*
 0=other
-1=c
-2=java
+1=C
+2=Java
 3=HTML
 */
-if(ratioc<5.0 && ratiojava<5.0 && ratiohtml<5.0){
-    printf("other");
-    return 0;
-}
+	if(ratioc<5.0 && ratiojava<5.0 && ratiohtml<5.0)
+	{
+	    printf("other");
+	    return 0;
+	}
 
-else{
-    return largestNumber(ratioc,ratiojava,ratiohtml);
-}
+	else
+	{
+	    return largestNumber(ratioc,ratiojava,ratiohtml);
+	}
 }
