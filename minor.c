@@ -5,7 +5,9 @@
 #include <stdio.h>
 #include <errno.h>
 
-#include "func.h"   //the new header file we have created
+#include "func.h"   //the new header file we have created for file chooser dialog
+#include "music.h"  //the new header file we have created for music categorization
+#include "contentf.h"   //the new header file we have created for content based categorization
 
 void getNames(char []);     //gets the name of new folder that will be created
 char * getExtension(char *);       //separates extension from file name
@@ -170,6 +172,91 @@ void get_content(char filepath[])
         }
     }
 }
+
+void get_music_gen(char filepath[])
+{
+
+    DIR *d;
+
+    struct dirent *dir;
+
+    d = opendir(filepath);
+    char artistx[100];
+
+    if (d)
+    {
+
+        while ((dir = readdir(d)) != NULL)
+        {
+
+            char final_cmd[500]="";
+            int dx;
+            int size=strlen(dir->d_name);
+            char filename[size+10];
+            char *ext;
+            strcpy(filename,dir->d_name);
+            ext=getExtension(filename);
+
+            if(strcmpi(ext,"mp3")==0)
+            {
+
+                if(strcmpi(filename,".")==0||strcmpi(filename,"..")==0)continue;
+
+                char temp[100];
+                strcpy(temp,filepath);
+                strcat(temp,"\\");
+                strcat(temp,filename);
+
+                strcpy(artistx,get_music_detail(temp));
+
+                printf("\n%s\n",artistx);
+
+                char newfilename[100]="\"";
+                strcat(newfilename,artistx);
+                strcat(newfilename,"\"");
+
+                 if (searchFordot(filename)==1)
+                {
+                    ext=getExtension(filename);
+                    dx=directory_exist(filepath,artistx);
+                    printf("\n%d %s\n",dx,filename);
+                }
+                else
+                {
+                   ext=NULL;
+                   printf("\n%s\n",filename);
+                   continue;
+                }
+
+                chdir(filepath);
+
+                if(!dx)
+                {
+                    getCmd(filename,newfilename,final_cmd);
+                    printf("%s",final_cmd);
+                    system(final_cmd);
+                }
+                else
+                {
+                    char cmd[60]="move ";
+                    char finalfilename[50]="\"";
+                    strcat(finalfilename,filename);
+                    strcat(finalfilename,"\"");
+                    strcat(cmd,finalfilename);
+                    strcat(cmd," ");
+                    strcat(cmd,newfilename);
+                    printf("%s\n",cmd);
+                    system(cmd);
+                }
+            }
+            else
+            {
+                continue;
+            }
+        }
+    }
+}
+
 void getNames()     //gets the name of new folder that will be created
 {
     DIR *d;
@@ -1165,6 +1252,15 @@ void getNames()     //gets the name of new folder that will be created
               system(cmd);
            }
        }
-      closedir(d);
+       
+       char filepathnew1[100];
+       strcpy(filepathnew1,filepath);
+       strcat(filepathnew1,"\\mp3");
+       get_music_gen(filepathnew1);
+       char filepathnew2[100];
+       strcpy(filepathnew2,filepath);
+       strcat(filepathnew2,"\\txt");
+       get_content(filepathnew2);
+       closedir(d);
    }
 }
