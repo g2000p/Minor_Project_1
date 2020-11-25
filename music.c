@@ -72,13 +72,7 @@ char *get_music_detail(char filex[])
 	   the whole field may be ignored or just shown as a number. */
 
     //printf("encoding %d \n",*s);
-	/*if (*s == GENRES)
-	  strcpy(genre, "Unknown");
-	  else if(*s == 255){
-      strcpy(genre,"Bollywood");
-	  }
-	else
-	  strcpy(genre, genres[*s]);*/
+	
 
         strcpy(ARTIST,artist);
     }
@@ -86,13 +80,6 @@ char *get_music_detail(char filex[])
 }
 
 
-	/* And now the final printing
-
-
-	printf("File \"%s\":\n", music_file_path);
-	printf("Title  : %-30s  Artist: %s\n", title, artist);
-	printf("Album  : %-30s  Year  : %4s\n", album, year);
-	printf("Comment: %-30s  Genre : %s\n\n", comment, genre);*/
-
+	
 
 
