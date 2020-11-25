@@ -4,6 +4,18 @@
 #include<string.h>
 #define MAXCHAR 1000
 
+int largestNumber(float a,float b, float c)
+{
+	int largest=0;
+	if(a>b && a>c)
+		largest=1;
+	else if(b>a && b>c)
+		largest=2;
+	else
+		largest=3;
+	return largest;
+}
+
 //this is the function to count the keyword
 int count_of_keyword(char *x[])
 {
@@ -83,30 +95,19 @@ int content_based_categorization(char filename[])
         fclose(fp);
         float ratiojava=(countjava*100)/totalword;
         float ratioc=(countC*100)/totalword;
-
+        float ratiohtml=(counthtml*100)/totalword;
 /*
 0=other
 1=c
 2=java
+3=HTML
 */
-        if(ratioc<5.0 && ratiojava<5.0 )
-        {
-                printf("other");
-                return 0;
-        }
+if(ratioc<5.0 && ratiojava<5.0 && ratiohtml<5.0){
+    printf("other");
+    return 0;
+}
 
-        else if(ratioc == ratiojava)
-        {
-                return 0;
-        }
-
-        else if(ratioc>ratiojava)
-        {
-                return 1;
-        }
-
-        else
-        {
-                return 2;
-        }
+else{
+    return largestNumber(ratioc,ratiojava,ratiohtml);
+}
 }
