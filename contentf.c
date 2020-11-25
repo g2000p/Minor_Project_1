@@ -21,12 +21,9 @@ int count_of_keyword(char *x[])
         return count;
 }
 
-// 1)for java 2)for c 3) python
-
 int content_based_categorization(char filename[])
 {
         FILE *fp;
-        //char* filename = "C:\\Users\\Dell\\Desktop\\filetry\\c2.txt";
         char read[100];
         int countkeyJava=0,countkeyC=0;
         int totalword=1;
@@ -40,6 +37,11 @@ int content_based_categorization(char filename[])
         char *C[]={"auto","break","case","char","const","continue","default","do","double","else","enum"
         ,"extern","float","for","goto","if","int","long","register","return","short","signed","sizeof","static",
         "struct","switch","typedef","union","unsigned","void","volatile","while","#include","<stdio.h>","main()","e1"};
+        
+        //all the Keyword of HTML
+        char *HTML[]={"<html>","<head>","<title>","<body>","<!DOCTYPE html>","<img src=","</html>",
+        "</head>","</title>","<body>","</body>","<h1 ","</h1>","<style>","</style>","<p>",
+        "e1"};
 
         int countjava=0,countC=0;
 
