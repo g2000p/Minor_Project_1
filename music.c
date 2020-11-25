@@ -70,16 +70,8 @@ char *get_music_detail(char filex[])
 	/* The genre field is not encoded as a string, but just one byte
 	   that indexes the decoding table. If memory is too expensive,
 	   the whole field may be ignored or just shown as a number. */
-
-    //printf("encoding %d \n",*s);
-	
-
+	    
         strcpy(ARTIST,artist);
     }
     return ARTIST;
 }
-
-
-	
-
-
