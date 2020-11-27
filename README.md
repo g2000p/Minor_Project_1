@@ -1,10 +1,10 @@
 # Minor_Project_1
 
-File Categorization based on Extension and Content using C
+<h2>File Categorization based on Extension and Content using C</h2>
 
-Project Mentor- Dr Hitesh Kumar Sharma
+<b>Project Mentor</b>- Dr Hitesh Kumar Sharma
 
-Group members:
+<b>Group members:</b>
 1. Adarsh Kandwal
 2. Gourav Paul
 3. Dev Chauhan
