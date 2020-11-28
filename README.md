@@ -28,7 +28,7 @@ BIDHOLI, DEHRADUN, UTTRAKHAND, INDIA
 <img src="images/final1.png">
 <hr>
 <h3>5.Result of Algorithm based on content</h3>
-<h4>a.Music Categorization based on "Artist"(Album/Genere/collab)<h4>
+<h4>a.Music Categorization based on "Artist"<h4>
 <img src="images/contentmusic.png">
 <h4>b.Text Classification based on "Code or Script" in them</h4>
 <img src="images/contentfile.png">
