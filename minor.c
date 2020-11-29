@@ -215,13 +215,11 @@ void get_music_gen(char filepath[])
 
                  if (searchFordot(filename)==1)
                 {
-                    ext=getExtension(filename);
                     dx=directory_exist(filepath,artistx);
                     printf("\n%d %s\n",dx,filename);
                 }
                 else
                 {
-                   ext=NULL;
                    printf("\n%s\n",filename);
                    continue;
                 }
