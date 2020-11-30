@@ -25,7 +25,7 @@ static void open_dialog(GtkWidget* button, gpointer window)
 }
 char *intilizeitall(int argc, char* argv[])
 {
-    gtk_init(&argc, &argv);
+    	gtk_init(&argc, &argv);
 	GtkWidget *window, *button,*label;
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	g_signal_connect(window, "delete-event", G_CALLBACK(gtk_main_quit), NULL);
@@ -37,6 +37,12 @@ char *intilizeitall(int argc, char* argv[])
 
 	button = gtk_button_new_with_label("Click me to select folder");
 	g_signal_connect(button, "clicked", G_CALLBACK(open_dialog), window);
+	
+	GtkWidget *box = gtk_vbox_new (FALSE, 5);
+    	gtk_box_pack_start (GTK_BOX (box), label, TRUE, TRUE, 0);
+        gtk_box_pack_start (GTK_BOX (box), button, TRUE, TRUE, 0);
+	
+	
 	gtk_container_set_border_width(GTK_CONTAINER(window), 200);
 	gtk_container_add(GTK_CONTAINER(window), button);
 
