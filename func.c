@@ -30,6 +30,7 @@ char *intilizeitall(int argc, char* argv[])
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	g_signal_connect(window, "delete-event", G_CALLBACK(gtk_main_quit), NULL);
 	
+	//creating a label named FILE CATEGORIZATION
 	 gchar *str = "<b >FILE CATEGORIZATION </b>";
    	 label = gtk_label_new(NULL);
     	 gtk_label_set_markup(GTK_LABEL(label), str);
