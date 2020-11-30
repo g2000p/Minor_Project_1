@@ -14,6 +14,9 @@ char * getExtension(char *);       //separates extension from file name
 char * getCmd(char[],char[],char[]);    //generate a command that the O/S can understand
 int directory_exist(char[],char[]);     //checks weather a folder exist or not
 int searchFordot(char []);      //to find a dot in a file name
+void get_music_gen(char filepath[]); //for music file categorization based on Artist
+void get_content(char filepath[]);  //for text file categorization based on type of content
+
 
 char filepath[800];
 
