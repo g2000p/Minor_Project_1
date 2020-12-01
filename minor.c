@@ -35,7 +35,7 @@ char * getExtension(char *filename)       //separates extension from file name
     return ext1+1;
 }
 
-char *getCmd(char filename[],char ext[],char final_cmd[])
+char *getCmd(char filename[],char ext[],char final_cmd[])   //creates new folder and moves file
 {
     strcat(final_cmd,"mkdir ");
     strcat(final_cmd,ext);
@@ -53,7 +53,7 @@ char *getCmd(char filename[],char ext[],char final_cmd[])
 
 }
 
-int searchFordot(char filename[])
+int searchFordot(char filename[])   //search for a dot in the file name to get the extension
 {
     int i=0;
     while(i<strlen(filename))
@@ -64,7 +64,7 @@ int searchFordot(char filename[])
     return 0;
 }
 
-int directory_exist(char file[],char ext[])
+int directory_exist(char file[],char ext[])     //checks if folder already exists or not
 {
     char temp[600];
 
@@ -89,7 +89,7 @@ int directory_exist(char file[],char ext[])
     }
 }
 
-void get_content(char filepath[])
+void get_content(char filepath[])      //to categorize based on content type inside a text file
 {
     printf("the file path is %s",filepath);
     DIR *d;
@@ -174,7 +174,7 @@ void get_content(char filepath[])
     }
 }
 
-void get_music_gen(char filepath[])
+void get_music_gen(char filepath[])    //to categorize based on Artist name of music file
 {
 
     DIR *d;
@@ -256,7 +256,7 @@ void get_music_gen(char filepath[])
     }
 }
 
-void getNames()     //gets the name of new folder that will be created
+void getNames()     //calls rest of the function and gets the name of new folder that will be created
 {
     DIR *d;
     struct dirent *dir;
