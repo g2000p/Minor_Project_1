@@ -74,7 +74,7 @@ int content_based_categorization(char filename[])
                 for(int i=0;i<countkeyJava;i++)
                 {
                         if(strcmpi(read,JAVA[i])==0){
-                        // printf("read:%s  java:%s\n",read,JAVA[i]);
+                     
                         countjava++;
                 }
         }
@@ -84,7 +84,7 @@ int content_based_categorization(char filename[])
 
               if(strcmpi(read,C[i])==0)
               {
-                      //printf("read:%s  java:%s\n",read,JAVA[i]);
+                     
                        countC++;
               }
         }
@@ -92,7 +92,7 @@ int content_based_categorization(char filename[])
 	 for(int i=0;i<countkeyhtml;i++){
 
               if(strcmpi(read,HTML[i])==0){
-           //printf("read:%s  java:%s\n",read,JAVA[i]);
+          
               counthtml++;
          }
         }
