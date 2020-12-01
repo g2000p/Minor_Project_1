@@ -27,7 +27,6 @@ int count_of_keyword(char *x[])
                 {
                         break;
                 }
-                 //printf("%d   %s\n",count,x[count]);
                 count++;
         }
         return count;
@@ -52,10 +51,9 @@ int content_based_categorization(char filename[])
         
         //all the Keyword of HTML
         char *HTML[]={"<html>","<head>","<title>","<body>","<!DOCTYPE html>","<img src=","</html>",
-        "</head>","</title>","<body>","</body>","<h1 ","</h1>","<style>","</style>","<p>",
-        "e1"};
+        "</head>","</title>","<body>","</body>","<h1 ","</h1>","<style>","</style>","<p>","e1"};
 
-        int countjava=0,countC=0,counthtml;
+        int countjava=0,countC=0,counthtml=0;
 
         fp = fopen(filename, "r");
         if (fp == NULL)
@@ -97,6 +95,7 @@ int content_based_categorization(char filename[])
         float ratioc=(countC*100)/totalword;
         float ratiohtml=(counthtml*100)/totalword;
 /*
+Different return value for each type
 0=other
 1=C
 2=Java
