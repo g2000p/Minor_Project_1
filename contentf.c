@@ -42,7 +42,9 @@ int content_based_categorization(char filename[])
         //all the keyword of JAVA
         char *JAVA[]={"abstract","assert","boolean","break","byte","case","catch","char","class","continue","default"
         ,"do","double","else","enum","extends","extends","final","finally","float","for","if","implements","import",
-        "instance","of","int","interface","long","native","new","nullpackage","java.util.Scanner","reader.nextInt();","java.util.Scanner;","e1"};
+        "instance","of","int","interface","long","native","new","nullpackage","java.util.Scanner","reader.nextInt();","java.util.Scanner;",
+       "public static","static class","public class","import java.io.*;","public class Main","Scanner reader","System.out.print","switch","case",
+       "default:" ,"e1"};
 
         //all the keyword of C
         char *C[]={"auto","break","case","char","const","continue","default","do","double","else","enum"
@@ -86,6 +88,15 @@ int content_based_categorization(char filename[])
                        countC++;
               }
         }
+		
+	 for(int i=0;i<countkeyhtml;i++){
+
+              if(strcmpi(read,HTML[i])==0){
+           //printf("read:%s  java:%s\n",read,JAVA[i]);
+              counthtml++;
+         }
+        }
+	
 
         totalword++;
 
