@@ -11,21 +11,15 @@
         gtk_file_chooser_set_current_folder(GTK_FILE_CHOOSER(dialog), g_get_home_dir());
         gint resp = gtk_dialog_run(GTK_DIALOG(dialog));
 
-
-
-        if(resp == GTK_RESPONSE_OK){
+        if(resp == GTK_RESPONSE_OK)
+        {
             strcpy(arr,gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(dialog)));
             strcpy(arr2,gtk_file_chooser_get_current_folder(GTK_FILE_CHOOSER(dialog)));
-            //g_print("%s\n", gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(dialog)));
-            //g_print("%s\n", gtk_file_chooser_get_current_folder(GTK_FILE_CHOOSER(dialog)));
         }
         else
             g_print("You pressed Cancel\n");
         gtk_widget_destroy(dialog);
-
-
     }
-
 
     char *intilizeitall(int argc, char* argv[]){
 
@@ -34,34 +28,19 @@
         window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
         g_signal_connect(window, "delete-event", G_CALLBACK(gtk_main_quit), NULL);
 
-
-        /*
-        gchar *str = "<b>ZetCode</b>, knowledge only matters";
-        label = gtk_label_new(NULL);
-        gtk_label_set_markup(GTK_LABEL(label), str);
-        gtk_container_add(GTK_CONTAINER(window), label);
-        gtk_widget_show(label);
-        */
-
         gchar *str = "<b >FILE CATEGORIZATION </b>";
         label = gtk_label_new(NULL);
         gtk_label_set_markup(GTK_LABEL(label), str);
 
-
         button = gtk_button_new_with_label("Click me");
         g_signal_connect(button, "clicked", G_CALLBACK(open_dialog), window);
-
-
-
 
         GtkWidget *box = gtk_vbox_new (FALSE, 5);
         gtk_box_pack_start (GTK_BOX (box), label, TRUE, TRUE, 0);
         gtk_box_pack_start (GTK_BOX (box), button, TRUE, TRUE, 0);
 
-
         gtk_container_set_border_width(GTK_CONTAINER(window), 200);
-
-
+        
         gtk_container_add (GTK_CONTAINER (window), box);
 
         gtk_widget_show_all(window);
@@ -69,37 +48,3 @@
 
         return arr2;
     }
-
-
-
-    char *intilizeitall2(int argc, char* argv[]){
-
-        gtk_init(&argc, &argv);
-        GtkWidget *window, *button,*label;
-        window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-        g_signal_connect(window, "delete-event", G_CALLBACK(gtk_main_quit), NULL);
-
-
-        /*
-        gchar *str = "<b>ZetCode</b>, knowledge only matters";
-        label = gtk_label_new(NULL);
-        gtk_label_set_markup(GTK_LABEL(label), str);
-        gtk_container_add(GTK_CONTAINER(window), label);
-        gtk_widget_show(label);
-
-        */
-
-        button = gtk_button_new_with_label("Click me");
-        g_signal_connect(button, "clicked", G_CALLBACK(open_dialog), window);
-        gtk_container_set_border_width(GTK_CONTAINER(window), 200);
-        gtk_container_add(GTK_CONTAINER(window), button);
-
-
-
-
-        gtk_widget_show_all(window);
-        gtk_main();
-
-        return arr;
-    }
-
