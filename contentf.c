@@ -16,6 +16,29 @@ int largestNumber(float a,float b, float c)
 	return largest;
 }
 
+char *get_new_file(char arr[],char *copy){
+//char arr[]="TextField(25)";
+
+    int l=strlen(arr);
+
+
+    for(int i=0;i<=l;i++){
+        if(arr[i]!='(')
+        {
+            copy[i]=arr[i];
+        }
+        else{
+            copy[i]='\0';
+            break;
+        }
+    }
+
+    //printf("\n%s\n",copy);
+    return copy;
+}
+
+
+
 //this is the function to count the keyword
 int count_of_keyword(char *x[])
 {
