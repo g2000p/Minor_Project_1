@@ -5,6 +5,16 @@
     int state_of_rad1=0,state_of_rad2=0;
     int musicselected,textselected;
 
+     int musicss(){
+    return musicselected;
+    }
+
+    int textss(){
+    return textselected;
+    }
+
+
+
     static void open_dialog(GtkWidget* button, gpointer window)
     {
         GtkWidget *dialog;
