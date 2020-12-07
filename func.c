@@ -2,6 +2,8 @@
     #include <string.h>
 
     char arr[50],arr2[50];
+    int state_of_rad1=0,state_of_rad2=0;
+    int musicselected,textselected;
 
     static void open_dialog(GtkWidget* button, gpointer window)
     {
