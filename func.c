@@ -13,6 +13,27 @@
     return textselected;
     }
 
+     void combo_changed (GtkWidget *wid, gpointer ptr)
+    {
+    int sel = gtk_combo_box_get_active (GTK_COMBO_BOX (wid));
+    char *selected = gtk_combo_box_text_get_active_text (
+    GTK_COMBO_BOX_TEXT (wid));
+    printf ("The value of the combo is %d %s\n", sel, selected);
+    musicselected=sel;
+
+   }
+
+    void combo_changed2 (GtkWidget *wid, gpointer ptr)
+    {
+    int sel = gtk_combo_box_get_active (GTK_COMBO_BOX (wid));
+    char *selected = gtk_combo_box_text_get_active_text (
+    GTK_COMBO_BOX_TEXT (wid));
+    printf ("The value of the combo is %d %s\n", sel, selected);
+    textselected=sel;
+
+   }
+
+
 
 
     static void open_dialog(GtkWidget* button, gpointer window)
