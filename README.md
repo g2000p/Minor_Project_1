@@ -18,7 +18,7 @@ BIDHOLI, DEHRADUN, UTTRAKHAND, INDIA
 <img src="images/before.png">
 <hr>
 <h3>2.GTKMM Menu</h3>
-<img src="images/gtkmenu.png">
+<img src="images/finalmenu.png">
 <hr>
 <h3>3.File chooser Dialog using GTKMM</h3>
 <img src="images/gtkchooser.png">
