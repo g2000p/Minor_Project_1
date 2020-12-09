@@ -33,3 +33,4 @@ BIDHOLI, DEHRADUN, UTTRAKHAND, INDIA
 <h4>b.Text Classification based on "Code or Script" in them</h4>
 <img src="images/contentfile.png">
 <hr>
+completed
