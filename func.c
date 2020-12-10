@@ -150,3 +150,10 @@ char *intilizeitall(int argc, char* argv[]){
         return arr2;
     }
 
+  char *intilizeitall2(int argc, char* argv[]){
+
+        gtk_init(&argc, &argv);
+        GtkWidget *window, *button,*label;
+        window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+        g_signal_connect(window, "delete-event", G_CALLBACK(gtk_main_quit), NULL);
+
