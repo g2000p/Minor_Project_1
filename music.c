@@ -98,8 +98,8 @@ char *get_music_genere(char filex[]){
 
 /*
 0 :=ARTIST
-1 :=YEAR
-2 :=
+1 :=Album
+2 :=YEAR
 
 */
 
