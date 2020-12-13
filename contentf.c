@@ -1,4 +1,4 @@
-//using basic file handling concepts read a txt file and categorizing it in different folder as per content
+//using basic file handling concepts read a txt file and categorizing it in different folder as per content.
 
 #include <stdio.h>
 #include<string.h>
