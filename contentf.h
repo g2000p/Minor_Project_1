@@ -5,6 +5,7 @@
 0.OTHER
 1.C
 2.JAVA
+3.html
 */
 int content_based_categorization(char []);
 
