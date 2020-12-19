@@ -7,5 +7,6 @@ static void open_dialog(GtkWidget* button, gpointer window);
 
 char *intilizeitall(int argc, char* argv[]);
 char *intilizeitall2(int argc, char* argv[]);
+int textss();
 
 #endif // FUNC_H_INCLUDED
