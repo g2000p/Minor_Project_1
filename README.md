@@ -1,6 +1,6 @@
 # Minor_Project_1
 
-<p>File Categorization based on Extension and Content using C</p>
+## File Categorization based on Extension and Content using C
 
 <b>Project Mentor</b>- Dr Hitesh Kumar Sharma
 
